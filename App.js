@@ -1,11 +1,15 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable eslint-comments/no-unlimited-disable */
+/* eslint-disable */
+
 import React from 'react';
 import {View} from 'react-native';
-import Home from './src/screens/Home/Home';
+import Routes from './src/navigation/Routes';
 
 const App = () => {
   return (
     <View>
-      <Home />
+      <Routes />
     </View>
   );
 };
