@@ -3,11 +3,11 @@
 /* eslint-disable */
 
 import React from 'react';
-import { ScrollView, View, Image, Text } from 'react-native';
+import { ScrollView, View, Image, Text, Button } from 'react-native';
 import ButtonCustom from '../../components/Button/ButtonCustom';
 import Styles from './Styles';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <ScrollView>
       <View style={Styles.header}>
@@ -33,9 +33,9 @@ const Home = () => {
         </View>
       </View>
       <View style={Styles.buttonsContainer}>
-        <ButtonCustom title="Eventos" onAction={() => {}} />
-        <ButtonCustom title="Contato" onAction={() => {}} />
-        <ButtonCustom title="News" onAction={() => {}} />
+        <ButtonCustom extraStyle={{width: 100}} title="Eventos" onAction={() => {{navigation.navigate("Eventos")}}} />
+        <ButtonCustom extraStyle={{width: 100}} title="Contato" onAction={() => {navigation.navigate("Contato")}} />
+        <ButtonCustom extraStyle={{width: 100}} title="News" onAction={() => {}} />
       </View>
     </ScrollView>
   );

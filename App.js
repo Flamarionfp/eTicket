@@ -7,11 +7,7 @@ import {View} from 'react-native';
 import Routes from './src/navigation/Routes';
 
 const App = () => {
-  return (
-    <View>
-      <Routes />
-    </View>
-  );
+  return <Routes />;
 };
 
 export default App;

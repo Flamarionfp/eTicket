@@ -5,13 +5,12 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  button: {
-    backgroundColor: '#020210D4',
+  formContainer: {
+    marginHorizontal: '10%',
+    marginVertical: 10,
+  }, 
+  buttonContainer: {
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: 8,
-  },
-  textButton: {
-    color: '#fff',
-  },
+    marginTop: 30,
+  }
 });
